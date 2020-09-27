@@ -16,6 +16,8 @@
         <jdk.version>12</jdk.version>
         <release.version>12</release.version>
         <micronaut.version>2.0.3</micronaut.version>
+        <flapdoodle.version>2.0.1</flapdoodle.version>
+        <guava.version>29.0-jre</guava.version>
         <exec.mainClass>com.example.task3.Application</exec.mainClass>
     </properties>
 
@@ -96,13 +98,13 @@
         <dependency>
             <groupId>de.flapdoodle.embed</groupId>
             <artifactId>de.flapdoodle.embed.mongo</artifactId>
-            <version>2.0.1</version>
+            <version>${flapdoodle.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>29.0-jre</version>
+            <version>${guava.version}</version>
         </dependency>
         <dependency>
             <groupId>io.micronaut.rxjava3</groupId>
